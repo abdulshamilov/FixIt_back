@@ -40,7 +40,7 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     path('api/', include('users.urls')),
-    path('api/', include('payments.urls')),
+    path('api/', include('social.urls')),
 ]
 
 if settings.DEBUG:
